@@ -211,7 +211,7 @@ Defesa Pessoal Segurança/
 ## Licença e Créditos
 
 ### Licença
-Este projeto é propriedade da UFF Blumenau.
+Este projeto é desenvolvido por Ezequiel Kowalski para UFF Blumenau.
 
 ### Créditos
 - **Desenvolvimento**: Equipe UFF
@@ -219,8 +219,3 @@ Este projeto é propriedade da UFF Blumenau.
 - **Ícones**: SVG customizados
 - **Fonts**: Google Fonts (Inter, Poppins, Open Sans)
 
----
-
-**Versão**: 1.0.0  
-**Última Atualização**: Janeiro 2025  
-**Status**: Produção # seguranca-blumenau
