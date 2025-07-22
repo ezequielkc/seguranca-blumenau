@@ -1,0 +1,258 @@
+/* ===================== RESPONSIVIDADE ===================== */
+
+/* Mobile First - Base para dispositivos móveis */
+@media (max-width: 480px) {
+  /* Tipografia responsiva */
+  h1 { font-size: 2rem; }
+  h2 { font-size: 1.5rem; }
+  h3 { font-size: 1.2rem; }
+  
+  /* Container */
+  .container {
+    width: 95%;
+    padding: 0 0.5rem;
+  }
+  
+  /* Header */
+  header {
+    padding: 1.5rem 0;
+  }
+  
+  header h1 {
+    font-size: 1.8rem;
+  }
+  
+  /* Seções */
+  section {
+    padding: 2rem 0;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 2rem 0 1rem 0;
+  }
+  
+  footer ul {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+  
+  /* Grid responsivo */
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  /* Cards */
+  .card {
+    padding: 1.5rem;
+  }
+  
+  /* Botões */
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Espaçamentos reduzidos */
+  .p-5 { padding: 1.5rem; }
+  .pt-5 { padding-top: 1.5rem; }
+  .pb-5 { padding-bottom: 1.5rem; }
+  .m-5 { margin: 1.5rem; }
+  .mt-5 { margin-top: 1.5rem; }
+  .mb-5 { margin-bottom: 1.5rem; }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Tipografia */
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.3rem; }
+  
+  /* Container */
+  .container {
+    width: 92%;
+    padding: 0 1rem;
+  }
+  
+  /* Grid responsivo */
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Footer */
+  footer ul {
+    gap: 1.5rem;
+  }
+  
+  /* Espaçamentos ajustados */
+  .p-5 { padding: 2rem; }
+  .pt-5 { padding-top: 2rem; }
+  .pb-5 { padding-bottom: 2rem; }
+  .m-5 { margin: 2rem; }
+  .mt-5 { margin-top: 2rem; }
+  .mb-5 { margin-bottom: 2rem; }
+}
+
+/* Desktop pequeno */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Container */
+  .container {
+    width: 90%;
+    padding: 0 1.5rem;
+  }
+  
+  /* Grid responsivo */
+  .grid-4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  /* Espaçamentos */
+  .p-5 { padding: 2.5rem; }
+  .pt-5 { padding-top: 2.5rem; }
+  .pb-5 { padding-bottom: 2.5rem; }
+  .m-5 { margin: 2.5rem; }
+  .mt-5 { margin-top: 2.5rem; }
+  .mb-5 { margin-bottom: 2.5rem; }
+}
+
+/* Desktop grande */
+@media (min-width: 1025px) {
+  /* Container */
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 2rem;
+  }
+  
+  /* Grid responsivo */
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .grid-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
+  /* Hover effects apenas em desktop */
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--sombra-media);
+  }
+  
+  .btn:hover {
+    transform: translateY(-1px);
+  }
+}
+
+/* Telas muito grandes */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1400px;
+  }
+  
+  h1 { font-size: 3rem; }
+  h2 { font-size: 2.5rem; }
+  h3 { font-size: 1.6rem; }
+  
+  section {
+    padding: 5rem 0;
+  }
+}
+
+/* Orientação landscape em mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+  header {
+    padding: 1rem 0;
+  }
+  
+  section {
+    padding: 1.5rem 0;
+  }
+  
+  footer {
+    padding: 1.5rem 0 1rem 0;
+  }
+}
+
+/* Impressão */
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+    page-break-inside: avoid;
+  }
+  
+  section {
+    page-break-inside: avoid;
+  }
+  
+  header, footer {
+    display: none;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+}
+
+/* Acessibilidade - Alto contraste */
+@media (prefers-contrast: high) {
+  :root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #000000;
+    --cor-texto: #000000;
+    --cor-fundo: #ffffff;
+    --cor-borda: #000000;
+  }
+  
+  .card {
+    border: 2px solid var(--cor-borda);
+  }
+  
+  .btn {
+    border: 2px solid var(--cor-borda);
+  }
+}
+
+/* Modo escuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --cor-fundo: #1a1a1a;
+    --cor-texto: #ffffff;
+    --cor-texto-invertido: #1a1a1a;
+    --cor-destaque: #2d2d2d;
+    --cor-borda: #404040;
+    --cor-cinza: #cccccc;
+  }
+  
+  .card {
+    background: var(--cor-destaque);
+  }
+  
+  section:nth-child(even) {
+    background: var(--cor-fundo);
+  }
+} 

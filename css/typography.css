@@ -1,0 +1,165 @@
+/* ===================== TIPOGRAFIA ===================== */
+
+/* Títulos */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--cor-texto);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  font-family: var(--fonte-titulos);
+  letter-spacing: -0.02em;
+}
+
+h1 { 
+  font-size: 2.5rem; 
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+h2 { 
+  font-size: 2rem; 
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h3 { 
+  font-size: 1.4rem; 
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h4 { 
+  font-size: 1.2rem; 
+  margin-bottom: 0.75rem;
+}
+
+h5 { 
+  font-size: 1.1rem; 
+  margin-bottom: 0.5rem;
+}
+
+h6 { 
+  font-size: 1rem; 
+  margin-bottom: 0.5rem;
+}
+
+/* Parágrafos */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  color: var(--cor-texto-secundario);
+  font-family: var(--fonte-secundaria);
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+/* Listas */
+ul, ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+ul li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+ul li::before {
+  content: "•";
+  color: var(--cor-accent);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+ol {
+  counter-reset: item;
+}
+
+ol li {
+  counter-increment: item;
+  position: relative;
+  padding-left: 2rem;
+}
+
+ol li::before {
+  content: counter(item) ".";
+  color: var(--cor-accent);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Classes utilitárias de texto */
+.texto-centralizado {
+  text-align: center;
+}
+
+.texto-esquerda {
+  text-align: left;
+}
+
+.texto-direita {
+  text-align: right;
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+.texto-maiusculo {
+  text-transform: uppercase;
+}
+
+.texto-minusculo {
+  text-transform: lowercase;
+}
+
+.texto-capitalizado {
+  text-transform: capitalize;
+}
+
+.texto-negrito {
+  font-weight: 700;
+}
+
+.texto-italico {
+  font-style: italic;
+}
+
+.texto-pequeno {
+  font-size: 0.875rem;
+}
+
+.texto-grande {
+  font-size: 1.125rem;
+}
+
+/* Cores de texto */
+.texto-primario {
+  color: var(--cor-texto);
+}
+
+.texto-secundario {
+  color: var(--cor-texto-secundario);
+}
+
+.texto-cinza {
+  color: var(--cor-cinza);
+}
+
+.texto-branco {
+  color: var(--cor-texto);
+}
+
+.texto-accent {
+  color: var(--cor-accent);
+} 

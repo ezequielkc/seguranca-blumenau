@@ -1,0 +1,243 @@
+/* ===================== COMPONENTES ===================== */
+
+/* Header */
+header {
+  background: var(--cor-header);
+  padding: 2rem 0;
+  box-shadow: var(--sombra-leve);
+  border-bottom: 2px solid var(--cor-accent);
+}
+
+header h1 {
+  color: var(--cor-texto);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  text-align: center;
+  color: var(--cor-texto-secundario);
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Footer */
+footer {
+  background: var(--cor-footer);
+  color: var(--cor-texto);
+  padding: 3rem 0 2rem 0;
+  margin-top: 4rem;
+}
+
+footer h2 {
+  color: var(--cor-texto);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+footer li {
+  margin: 0;
+}
+
+footer a {
+  color: var(--cor-texto);
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+footer a:hover {
+  opacity: 0.8;
+  color: var(--cor-texto);
+}
+
+/* Seções */
+section {
+  padding: 4rem 0;
+}
+
+section:nth-child(even) {
+  background: var(--cor-fundo-claro);
+}
+
+/* Cards */
+.card {
+  background: var(--gradiente-card);
+  border-radius: var(--raio-borda);
+  padding: 2rem;
+  box-shadow: var(--sombra-leve);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: var(--cor-texto);
+  border: 1px solid var(--cor-borda);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--sombra-media);
+}
+
+.card-header {
+  border-bottom: 1px solid var(--cor-borda);
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-footer {
+  border-top: 1px solid var(--cor-borda);
+  padding-top: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Botões */
+.btn {
+  display: inline-block;
+  padding: 0.75em 1.5em;
+  border-radius: var(--raio-borda);
+  text-decoration: none;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-family: var(--fonte-titulos);
+  letter-spacing: 0.01em;
+}
+
+.btn-primario {
+  background: var(--gradiente-accent);
+  color: var(--cor-texto);
+}
+
+.btn-primario:hover {
+  background: var(--cor-accent);
+  color: var(--cor-texto);
+}
+
+.btn-secundario {
+  background: var(--gradiente-secundario);
+  color: var(--cor-texto);
+}
+
+.btn-secundario:hover {
+  background: var(--cor-terciaria);
+  color: var(--cor-texto);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--cor-texto);
+  border: 2px solid var(--cor-texto);
+}
+
+.btn-outline:hover {
+  background: var(--cor-texto);
+  color: var(--cor-fundo);
+}
+
+.btn-pequeno {
+  padding: 0.5em 1em;
+  font-size: 0.875rem;
+}
+
+.btn-grande {
+  padding: 1em 2em;
+  font-size: 1.125rem;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: var(--fonte-titulos);
+}
+
+.badge-primario {
+  background: var(--cor-primaria);
+  color: var(--cor-texto-invertido);
+}
+
+.badge-secundario {
+  background: var(--cor-secundaria);
+  color: var(--cor-texto-invertido);
+}
+
+.badge-success {
+  background: var(--cor-success);
+  color: var(--cor-texto-invertido);
+}
+
+.badge-warning {
+  background: var(--cor-warning);
+  color: var(--cor-texto);
+}
+
+/* Alertas */
+.alert {
+  padding: 1rem 1.5rem;
+  border-radius: var(--raio-borda);
+  margin-bottom: 1rem;
+  border-left: 4px solid;
+}
+
+.alert-info {
+  background: var(--cor-paz);
+  border-left-color: var(--cor-primaria);
+  color: var(--cor-texto);
+}
+
+.alert-success {
+  background: #d4edda;
+  border-left-color: var(--cor-success);
+  color: #155724;
+}
+
+.alert-warning {
+  background: #fff3cd;
+  border-left-color: var(--cor-warning);
+  color: #856404;
+}
+
+.alert-danger {
+  background: #f8d7da;
+  border-left-color: #dc3545;
+  color: #721c24;
+}
+
+/* Gradientes temáticos */
+.bg-paz {
+  background: var(--gradiente-paz);
+}
+
+.bg-educacao {
+  background: var(--gradiente-educacao);
+}
+
+.bg-disciplina {
+  background: var(--gradiente-disciplina);
+}
+
+.bg-primario {
+  background: var(--gradiente-primario);
+  color: var(--cor-texto-invertido);
+}
+
+.bg-secundario {
+  background: var(--gradiente-secundario);
+  color: var(--cor-texto-invertido);
+} 

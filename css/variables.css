@@ -1,0 +1,55 @@
+/* ===================== VARIÁVEIS CSS ===================== */
+:root {
+  /* Cores Principais - Tema Escuro Profissional */
+  --cor-primaria: #1a1a2e;
+  --cor-secundaria: #16213e;
+  --cor-terciaria: #0f3460;
+  --cor-accent: #e94560;
+  --cor-destaque: #16213e;
+  --cor-fundo: #0f0f23;
+  --cor-fundo-claro: #1a1a2e;
+  --cor-texto: #ffffff;
+  --cor-texto-secundario: #b8b8b8;
+  --cor-texto-invertido: #0f0f23;
+  --cor-cinza: #4a4a6a;
+  --cor-borda: #2a2a4a;
+  
+  /* Cores de Componentes */
+  --cor-header: #0f0f23;
+  --cor-footer: #1a1a2e;
+  --cor-success: #00d4aa;
+  --cor-warning: #ffa726;
+  --cor-danger: #e94560;
+  
+  /* Cores Temáticas */
+  --cor-paz: #1a1a2e;
+  --cor-educacao: #16213e;
+  --cor-disciplina: #0f3460;
+  
+  /* Tipografia */
+  --fonte-principal: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  --fonte-titulos: 'Poppins', 'Inter', sans-serif;
+  --fonte-secundaria: 'Open Sans', 'Inter', sans-serif;
+  
+  /* Espaçamentos e Bordas */
+  --raio-borda: 12px;
+  
+  /* Sombras */
+  --sombra-leve: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --sombra-media: 0 8px 24px rgba(0, 0, 0, 0.4);
+  --sombra-forte: 0 16px 48px rgba(0, 0, 0, 0.5);
+  
+  /* Gradientes */
+  --gradiente-primario: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  --gradiente-secundario: linear-gradient(135deg, #0f3460 0%, #e94560 100%);
+  --gradiente-accent: linear-gradient(135deg, #e94560 0%, #ff6b6b 100%);
+  --gradiente-dark: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+  --gradiente-card: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
+  --gradiente-hero: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+  
+  /* Breakpoints */
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop: 1024px;
+  --large: 1200px;
+} 

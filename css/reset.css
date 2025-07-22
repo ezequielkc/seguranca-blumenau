@@ -1,0 +1,77 @@
+/* ===================== RESET CSS ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--fonte-principal);
+  background: var(--cor-fundo);
+  color: var(--cor-texto);
+  line-height: 1.6;
+  font-size: 1rem;
+  min-height: 100vh;
+}
+
+/* Elementos de mídia */
+img, iframe, video, canvas, svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Links */
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--cor-secundaria);
+}
+
+/* Listas */
+ul, ol {
+  list-style: none;
+}
+
+/* Formulários */
+button, input, textarea, select {
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: var(--raio-borda);
+  background: var(--cor-primaria);
+  color: var(--cor-texto-invertido);
+  padding: 0.75em 1.5em;
+  transition: all 0.2s ease;
+}
+
+button:hover, button:focus {
+  background: var(--cor-secundaria);
+  transform: translateY(-1px);
+}
+
+/* Tabelas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Seções */
+section {
+  padding: 3rem 0 2rem 0;
+} 

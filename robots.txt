@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://seguranca.defesapessoalblumenau.com.br/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow specific files
+Disallow: /css/
+Disallow: /js/
+Disallow: /assets/
+
+# Allow important files
+Allow: /assets/logo.png
+Allow: /assets/favicon.svg 
